@@ -1,16 +1,15 @@
-<html>
+<!DOCTYPE html>
     <head>
         <title>Marco's Page</title>
-        <style>
-
-        </style>
     </head>
     <body>
+        <!--I'm hiding a comment up here-->
         <h1>Marco's Favorite Hobby: Board Games</h1>
-        <img src="ArcsPicture.webp" width="300">
+        <img src="ArcsPicture.webp" width="300" alt="Board Game Picture">
+        <br>
         <h2>Why I Enjoy Them</h2>
         <p>There is something about being in a space with friends and family, building strategies and interacting
-            with one another that makes board games so exquisite.
+            with one another that makes board games so <strong>exquisite.</strong>
         </p>
         <h3>Favorite Games So Far</h3>
         <ul>
@@ -18,17 +17,37 @@
             <li>Catan</li>
             <li>Wingspan</li>
             <li>Terraforming Mars</li>
+        </ul>
+        <details><summary>Even More Games</summary><ul>
+            <li>ARCS</li>
+            <li>Star Wars: Battle of Hoth</li>
+            <li>Vantage</li>
+        </ul></details>
+        <hr>
         <h4>Another Reason</h4>
-        <p>I also am bit of a collector when it comes to this hobby. There is just so much history within this hobby
+        <p>I also am bit of a <em>collector</em> when it comes to this hobby. There is just so much history within this hobby
             and so many experiences to be had that I feel like I'd want to catch up on.
         </p>
-        <h5>I hope it does</h5>
-        <p>This is a sample HTML page.</p>
-        <!-- Relative Path vs Absolute path -->
+        <h5>Helping Others</h5>
+        <p>Lastly, I do get some joy teaching others how to play these games. Like I am passing down my own personal knowledge
+            to lead others into a wonderful time.
+        </p>
         <a href="about.html"
-            ><img src="testimg.png" width="300"
-            alt="Sample Image">
+            ><img src="BattleOfHoth.webp" width="300"
+            alt="Battle of Hoth from the Star Wars Board Game">
         </a>
+        <button type="button">This is Just a Button</button>
+        <h6>And this is just a form</h6>
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
         <a href="about.html">Click here for a sample explanation</a>
     </body>
+    <footer>
+        <p><sub>Created by Marco Flores for the completion of homework 1</sub></p>
+    </footer>
 </html>
