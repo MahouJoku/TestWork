@@ -8,7 +8,26 @@
 body {
     background-color: slategray;
     font-family:garamond, serif;
-    color: var(--font-color)
+    color: var(--font-color);
+    min-height: 100vh;
+    margin: 0;
+}
+
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url('probe.webp');
+    background-repeat: repeat;
+    opacity: 0.2;
 }
 
 main {
@@ -63,11 +82,23 @@ nav li a {
     padding: 10px 20px;
     color: var(--font-color);
     text-transform: uppercase;
+    border: 2px solid var(--accent-color);  
 }
 
 nav li a:hover {
     color: white;
     background-color: var(--accent-dark-color);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: justify;
+    line-height: 1.5;
+    unicode-bidi: isolate;
 }
 
 details {
